@@ -1,5 +1,7 @@
 # 6 Modern Animated Tab Navigation Designs
 
+🌐 **[Live Demo — Try It Here!](https://horacio-yon.github.io/-6-Modern-Animated-Tab/)**
+
 A collection of 6 modern, interactive tab navigation designs featuring smooth animations, glassmorphism effects, neon lighting, and spring-based physics.
 
 Built with pure **HTML, CSS, and JavaScript** — no frameworks or dependencies required.
@@ -89,7 +91,7 @@ This system creates natural, fluid movements without relying exclusively on pred
 The interface uses a dark color scheme with turquoise accents, soft glass surfaces, and neon highlights.
 
 ```css
---ac: #4fe3c1;                  /* Turquoise accent */
+--ac: #4fe3c1;                   /* Turquoise accent */
 --glow: rgba(79, 227, 193, .45); /* Glow effect */
 --tx2: rgba(255, 255, 255, .66); /* Secondary text */
 --gl: rgba(255, 255, 255, .07);  /* Glass background */
@@ -106,6 +108,8 @@ No installation, build tools, or additional dependencies required.
 2. Open `index.html` in your browser.
 3. Explore the six navigation styles.
 4. Interact with the tabs using your mouse, touch screen, or keyboard.
+
+Alternatively, try the **[Live Demo](https://horacio-yon.github.io/-6-Modern-Animated-Tab/)** directly in your browser.
 
 ## 🔧 Customization
 
