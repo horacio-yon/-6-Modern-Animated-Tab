@@ -1,140 +1,170 @@
-# Navigation Tabs - 6 Estilos Animados
+# 6 Modern Animated Tab Navigation Designs
 
-Proyecto de navegación con tabs que presenta 6 estilos diferentes de animación e interacción, con efectos glassmorphism y animaciones suaves basadas en física.
+A collection of 6 modern, interactive tab navigation designs featuring smooth animations, glassmorphism effects, neon lighting, and spring-based physics.
 
-## 🎨 Estilos Incluidos
+Built with pure **HTML, CSS, and JavaScript** — no frameworks or dependencies required.
 
-1. **Liquid Glass** - Lente líquida con efecto glassmorphism que se estira
-2. **Dark Neon Lens** - Lente oscura con bordes neón brillantes
-3. **Bounce** - Burbuja flotante que rebota con animación hop
-4. **Neon Wave** - Onda neón animada con física de resorte
-5. **Spotlight** - Foco de luz que ilumina el tab seleccionado
-6. **Floating Button** - Botón flotante con animación de física avanzada
+## 🎨 Navigation Styles
 
-## 📁 Estructura del Proyecto
+1. **Liquid Glass** — A stretching liquid lens with elegant glassmorphism effects.
+2. **Dark Neon Lens** — A dark floating lens with vibrant neon borders and glowing highlights.
+3. **Bounce** — A playful floating bubble with smooth bouncing and hopping animations.
+4. **Neon Wave** — An animated neon wave powered by spring physics.
+5. **Spotlight** — A dynamic spotlight that follows and illuminates the selected tab.
+6. **Floating Button** — A floating navigation button featuring advanced physics-based animations.
 
-```
+## ✨ Features
+
+- 🎨 6 unique animated navigation styles
+- ⚡ Spring physics for natural and fluid motion
+- 🔍 Glassmorphism with CSS `backdrop-filter`
+- 🌈 Neon glows, lighting effects, and dynamic shadows
+- 🎯 Smooth transitions with custom cubic-bezier curves
+- 📱 Responsive layouts for desktop and mobile devices
+- ♿ Keyboard navigation and accessibility support
+- 🎭 Reduced-motion support using `prefers-reduced-motion`
+- 🚀 Lightweight implementation without external frameworks
+
+## 📁 Project Structure
+
+```text
 src/
-├── index.html       # HTML principal con estructura semántica
-├── styles.css       # Estilos CSS con animaciones y efectos
-├── script.js        # Lógica JavaScript con física de animación
-└── README.md        # Este archivo
+├── index.html    # Main HTML structure
+├── styles.css    # Styles, animations, and visual effects
+├── script.js     # Interactions and animation physics
+└── README.md     # Project documentation
 ```
 
-## 🚀 Características
+## 🛠️ Technologies
 
-- ✨ 6 estilos de animación únicos
-- 🎯 Física de animación con sistema de resortes (Spring Physics)
-- 🔍 Efectos glassmorphism con backdrop-filter
-- ♿ Accesible con navegación por teclado (flechas, Home, End)
-- 📱 Responsive y optimizado para móviles
-- 🎭 Respeta preferencias de movimiento reducido (prefers-reduced-motion)
-- 🌟 Efectos de glow y sombras neón
-- 💫 Transiciones suaves con cubic-bezier personalizadas
+**HTML5**
+- Semantic HTML structure
+- ARIA attributes for accessibility
 
-## 🎮 Interacción
+**CSS3**
+- CSS Custom Properties
+- Glassmorphism and `backdrop-filter`
+- Keyframe animations
+- Custom cubic-bezier transitions
+- Responsive media queries
+- CSS Grid and Flexbox
 
-- **Click/Tap**: Selecciona un tab
-- **Teclado**:
-  - `Arrow Right/Left`: Navega entre tabs
-  - `Home`: Primer tab
-  - `End`: Último tab
-- **Hover**: Efectos de iluminación radial en la barra
+**Vanilla JavaScript**
+- ES6 classes
+- `requestAnimationFrame`
+- `ResizeObserver` API
+- Custom spring physics engine
+- Keyboard and pointer interactions
 
-## 🛠️ Tecnologías
+## 🎮 Interactions
 
-- HTML5 semántico
-- CSS moderno con:
-  - Variables CSS (Custom Properties)
-  - Glassmorphism (backdrop-filter)
-  - Animaciones keyframes
-  - Media queries
-  - Grid y Flexbox
-- JavaScript vanilla con:
-  - Clases ES6
-  - ResizeObserver API
-  - RequestAnimationFrame
-  - Sistema de física con resortes
+- **Click / Tap:** Select a navigation tab.
+- **Hover:** Trigger radial lighting and interactive effects.
+- **Keyboard:** Navigate between tabs using arrow keys, Home, and End.
 
-## 🎨 Sistema de Física
+### Keyboard Controls
 
-El proyecto implementa un sistema de animación basado en física de resortes (Spring Physics) mediante la clase `Sp`:
+| Key | Action |
+|---|---|
+| `Tab` | Focus the active tab |
+| `Arrow Right` | Move to the next tab |
+| `Arrow Left` | Move to the previous tab |
+| `Home` | Jump to the first tab |
+| `End` | Jump to the last tab |
+| `Enter / Space` | Activate the focused tab |
 
-- **k**: Constante de rigidez del resorte
-- **d**: Constante de amortiguamiento
-- Animaciones fluidas y naturales sin necesidad de easing predefinidos
+## ⚡ Spring Physics
 
-## 🌈 Paleta de Colores
+The project uses a custom spring physics system implemented through the `Sp` class.
+
+Its main parameters include:
+
+- **`k` — Stiffness:** Controls the spring's resistance and responsiveness.
+- **`d` — Damping:** Controls oscillation and how quickly the animation settles.
+
+This system creates natural, fluid movements without relying exclusively on predefined easing functions.
+
+## 🌈 Color Palette
+
+The interface uses a dark color scheme with turquoise accents, soft glass surfaces, and neon highlights.
 
 ```css
---ac: #4fe3c1          /* Color de acento (turquesa) */
---glow: rgba(79, 227, 193, .45)  /* Efecto de brillo */
---tx2: rgba(255, 255, 255, .66)  /* Texto secundario */
---gl: rgba(255, 255, 255, .07)   /* Fondo glass light */
---gb: rgba(255, 255, 255, .16)   /* Borde glass */
+--ac: #4fe3c1;                  /* Turquoise accent */
+--glow: rgba(79, 227, 193, .45); /* Glow effect */
+--tx2: rgba(255, 255, 255, .66); /* Secondary text */
+--gl: rgba(255, 255, 255, .07);  /* Glass background */
+--gb: rgba(255, 255, 255, .16);  /* Glass border */
 ```
 
-Fondo principal: degradado radial en tonos verde oscuro (#052120 - #062322)
+**Background:** Dark green radial gradient using `#052120` and `#062322`.
 
-## 📦 Uso
+## 🚀 Getting Started
 
-1. Abre `index.html` en tu navegador
-2. Explora los diferentes estilos de navegación
-3. Interactúa con los tabs mediante click o teclado
+No installation, build tools, or additional dependencies required.
 
-## ♿ Accesibilidad
+1. Download or clone the repository.
+2. Open `index.html` in your browser.
+3. Explore the six navigation styles.
+4. Interact with the tabs using your mouse, touch screen, or keyboard.
 
-- Roles ARIA apropiados (`aria-label`, `aria-current`, `aria-hidden`)
-- Navegación completa por teclado
-- Estados de focus visibles
-- Textos ocultos para screen readers (clase `.sr`)
-- Respeto por `prefers-reduced-motion`
+## 🔧 Customization
 
-## 🎯 Navegación por Teclado
+### Modify Navigation Tabs
 
-Cada barra de tabs soporta:
-- `Tab`: Enfoca el tab activo actual
-- `Arrow Right`: Siguiente tab
-- `Arrow Left`: Tab anterior
-- `Home`: Primer tab
-- `End`: Último tab
-- `Enter/Space`: Activa el tab enfocado
-
-## 📊 Rendimiento
-
-- Uso de `requestAnimationFrame` para animaciones suaves a 60fps
-- Throttling de delta time para evitar saltos (máx 30ms)
-- Transiciones CSS hardware-accelerated
-- ResizeObserver para ajuste responsive eficiente
-
-## 🔧 Personalización
-
-Para modificar los tabs, edita el array `TABS` en `script.js`:
+Edit the `TABS` array in `script.js`:
 
 ```javascript
 const TABS = [
   ['icon-key', 'Label'],
-  // Agrega más tabs aquí
+  // Add more tabs here
 ];
 ```
 
-Para agregar iconos, actualiza el objeto `IC` con paths SVG.
+### Add Custom Icons
 
-## 🎬 Animaciones Clave
+Update the `IC` object in `script.js` with your custom SVG paths.
 
-- **pop**: Aparición del icono con escala
-- **hop**: Rebote de la burbuja con deformación
-- Transiciones con cubic-bezier personalizadas para efectos elásticos
+### Customize Colors
 
-## 👨‍💻 Autor
+Modify the CSS custom properties to create your own color scheme, neon effects, or glassmorphism variations.
 
-**Codea con Horacio**
-- YouTube: [@codeaconhoracio](https://www.youtube.com/@codeaconhoracio)
+## 🎬 Key Animations
 
-## 📄 Licencia
+- **`pop`:** Scale-based icon entrance animation.
+- **`hop`:** Elastic bouncing effect with subtle deformation.
+- **Spring transitions:** Physics-driven motion for fluid interactions.
+- **Custom cubic-bezier:** Smooth elastic transitions and visual feedback.
 
-Proyecto educativo de código abierto.
+## 📊 Performance
+
+- `requestAnimationFrame` for smooth, synchronized animations.
+- Delta-time throttling (maximum 30 ms) to prevent large animation jumps.
+- Hardware-accelerated CSS transitions where supported.
+- `ResizeObserver` for efficient responsive adjustments.
+- Lightweight implementation using native browser APIs.
+
+## ♿ Accessibility
+
+- ARIA attributes such as `aria-label`, `aria-current`, and `aria-hidden`.
+- Full keyboard navigation.
+- Visible focus indicators.
+- Screen-reader-friendly hidden labels using `.sr`.
+- Reduced-motion preferences supported through `prefers-reduced-motion`.
+
+## 👨‍💻 Author
+
+**Codea con Horacio** ❤️💻
+
+Creating interactive web experiences, creative UI animations, and modern frontend projects using HTML, CSS, and JavaScript.
+
+🎥 YouTube: [@codeaconhoracio](https://www.youtube.com/@codeaconhoracio)
+
+## 📄 License
+
+An educational project created for learning, experimentation, and exploring modern web animation techniques.
 
 ---
 
-¡Disfruta experimentando con estos efectos de navegación! 🚀
+⭐ If you enjoyed this project, consider giving the repository a star!
+
+❤️ Thanks for supporting **Codea con Horacio**. Keep coding and creating! 🚀
